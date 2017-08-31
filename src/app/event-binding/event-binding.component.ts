@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, EventEmitter, Output} from '@angular/core';
 
 @Component({
   moduleId: module.id,
@@ -7,8 +7,11 @@ import {Component} from '@angular/core';
   styleUrls: ['./event-binding.component.css']
 })
 export class EventBindingComponent {
+  @Output() clickme = new EventEmitter<string>();
 
-  constructor() {
+
+  clicked() {
+    this.clickme.emit('This works');
   }
 
 

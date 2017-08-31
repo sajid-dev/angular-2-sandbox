@@ -9,4 +9,9 @@ import {Component, Input} from '@angular/core';
 export class PropertyBindingComponent {
   name = 'sajid';
   @Input() result: string = 'Sajid';
+
+  clicked(value: string) {
+    alert('value');
+
+  }
 }
