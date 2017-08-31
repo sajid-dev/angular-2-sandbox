@@ -1,0 +1,12 @@
+<div class="container">
+  <br>
+  <p>{{stringInterpolation}}</p>
+  <br>
+  <p>Text using {{stringInterpolation}}</p>
+  <br>
+  <label for="string">Input Value Using</label>
+  <input type="text" value="{{stringInterpolation}}" id="string">
+  <hr>
+  <h3>Component from Outside</h3>
+  <app-property-binding [result]="myvalue"></app-property-binding>
+</div>
